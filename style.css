@@ -1,0 +1,194 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+/* Encabezado */
+h1, h2, h3 {
+    color: #0066cc;
+}
+
+h2 u {
+    text-decoration: none;
+    border-bottom: 2px solid #0066cc;
+}
+
+/* Título principal */
+header {
+    text-align: center;
+    background-image: url('https://st.hzcdn.com/simgs/b84261110accfe6d_17-3920/home-design.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del encabezado */
+    background-position: center 80%; /* Desplaza la imagen hacia abajo, mostrando más de la parte inferior */
+    padding: 80px 20px; /* Aumenta el padding superior e inferior a 80px */
+    border-bottom: 5px solid #0066cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+header font {
+    font-size: 3em;
+    color: #fff; /* Letras en blanco */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: rgba(0, 102, 204, 0.5); /* Fondo semi-transparente azul */
+    padding: 10px; /* Espacio entre el texto y el fondo */
+    border-radius: 10px; /* Bordes redondeados para el fondo */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5), /* Resplandor blanco */
+        0 0 10px rgba(255, 255, 255, 0.3), /* Resplandor más difuso */
+        0 0 15px rgba(0, 102, 204, 0.8); /* Resplandor azul */
+}
+
+
+/* Índice de navegación */
+nav {
+    background-color: #00bcd4;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+nav h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+    background-color: #004d99;
+    transform: scale(1.1);
+}
+
+/* Secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Galería */
+section#Galeria img {
+    margin: 10px;
+    border: 2px solid #0066cc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Añadir transición para suavizar el efecto */
+}
+
+section#Galeria img:hover {
+    transform: scale(1.1); /* Aumentar el tamaño de la imagen al 110% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Recomendaciones */
+section#Recomendaciones ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+section#Recomendaciones ul li {
+    margin: 5px 0;
+}
+
+/* Ubicación */
+iframe {
+    border: none;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    width: 100%; /* Asegura que el mapa use el ancho completo */
+    height: 400px; /* Ajusta la altura del mapa */
+}
+
+/* Botón flotante */
+.floating-button {
+    position: fixed; /* Fijo en la ventana */
+    bottom: 20px; /* A 20px del fondo */
+    right: 20px; /* A 20px de la derecha */
+    padding: 15px 20px; /* Espaciado */
+    background-color: #0066cc; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    transition: background-color 0.3s, transform 0.3s; /* Transición para efectos */
+}
+
+.floating-button:hover {
+    background-color: #004d99; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0066cc;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
