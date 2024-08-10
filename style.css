@@ -20,9 +20,9 @@ h2 u {
 /* Título principal */
 header {
     text-align: center;
-    background-image: url('https://st.hzcdn.com/simgs/b84261110accfe6d_17-3920/home-design.jpg'); /* Imagen de fondo */
+    background-image: url('https://img3.wallspic.com/previews/0/6/2/9/99260/99260-agua-vacaciones-tropicos-piscina-caribe-x750.jpg'); /* Imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el espacio del encabezado */
-    background-position: center 80%; /* Desplaza la imagen hacia abajo, mostrando más de la parte inferior */
+    background-position: center 50%; /* Desplaza la imagen hacia abajo, mostrando más de la parte inferior */
     padding: 80px 20px; /* Aumenta el padding superior e inferior a 80px */
     border-bottom: 5px solid #0066cc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -126,6 +126,8 @@ tbody tr:hover {
 }
 
 /* Galería */
+
+
 section#Galeria img {
     margin: 10px;
     border: 2px solid #0066cc;
