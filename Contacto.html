@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Turicentro La Cuevas de Anda Mira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <font size="200">Turicentro La Cuevas de Anda Mira</font>
+    </header>
+
+    <nav>
+        <h2><u>Índice</u></h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="atracciones.html">Atracciones</a></li>
+            <li><a href="alojamiento.html">Alojamiento</a></li>S
+        </ul>
+    </nav>
+
+    <section id="Contacto">
+        <h2><u>Contáctanos</u></h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <!-- Modal de confirmación -->
+        <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¡Gracias por contactarnos! Te responderemos lo más pronto posible.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Desarrollado por: Deyson Donado | 
+        Carnet: 9490-21-5197 | 
+        Curso: Desarrollo Web | 
+        Sección: A
+    </footer>
+
+    <button class="floating-button" onclick="window.scrollTo(0, 0)">Ir al Índice</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Manejar el envío del formulario de contacto
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Obtener valores de los campos del formulario
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Mostrar los valores en la consola
+            console.log("Nombre:", nombre);
+            console.log("Correo electrónico:", email);
+            console.log("Mensaje:", mensaje);
+
+            // Mostrar el modal de confirmación
+            $('#confirmacionModal').modal('show');
+
+            // Limpiar el formulario
+            form.reset();
+        });
+    </script>
+</body>
+</html>
